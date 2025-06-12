@@ -3,6 +3,9 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #222;
 }
 
 h1,
@@ -24,6 +27,13 @@ img {
   width: 100%;
 }
 
+.site-header {
+  background-color: #fafafa;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -39,15 +49,41 @@ img {
 
 .main-nav ul li a {
   display: block;
-  color: inherit;
+  color: #333;
+  padding: 0.75rem 1rem;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 form input,
 form textarea {
   display: block;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
@@ -66,8 +102,22 @@ form button {
   text-transform: uppercase;
 }
 
+form button:hover,
+form button:focus {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .site-footer {
-  padding: 2rem 0;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
 }
 
 .skip-link {
